@@ -1,14 +1,14 @@
 terraform {
   required_providers {
     github = {
-      source = "integrations/github"
+      source  = "integrations/github"
       version = "6.3.1"
     }
   }
 
   backend "gcs" {
-    bucket  = "tf-github-repos-state"
-    prefix  = "terraform/state"
+    bucket = "tf-github-repos-state"
+    prefix = "terraform/state"
   }
 }
 
